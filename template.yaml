@@ -18,7 +18,7 @@ Resources:
         Properties:
             CodeUri: hello_world/
             Handler: app.lambda_handler
-            Runtime: python3.6
+            Runtime: python3.7
             Events:
                 HelloWorld:
                     Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
@@ -31,13 +31,13 @@ Resources:
         Properties:
             CodeUri: login/
             Handler: app.lambda_handler
-            Runtime: python3.6
+            Runtime: python3.7
             Events:
                 Login:
                     Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
                     Properties:
                         Path: /login
-                        Method: get
+                        Method: ANY
 
 Outputs:
 
