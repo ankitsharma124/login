@@ -2,7 +2,7 @@ import boto3
 import json
 
 # import requests
-
+db = boto3.resource('dynamodb','arn:aws:dynamodb:ap-northeast-1:759702656393:table/users')
 
 def lambda_handler(event, context):
     """Sample pure Lambda function
